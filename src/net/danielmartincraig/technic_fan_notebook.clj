@@ -1,14 +1,7 @@
-;; # Welcome to Clerk!
+;; # Technic Fan Notebook
 
 (ns net.danielmartincraig.technic-fan-notebook
   (:require [nextjournal.clerk :as clerk]))
-
-;; This is some Markdown.
-
-(defn hello [s]
-  (str "Hello, " s "!"))
-
-(hello "Clerk")
 
 (def brick-viewer
   {:transform-fn clerk/mark-presented
@@ -18,4 +11,4 @@
                   (fn [BrickViewer]
                     [:brick-viewer {:src src-path}])])})
  
-(clerk/with-viewer brick-viewer "/_fs/src/net/danielmartincraig/example.mpd") 
+(clerk/with-viewer brick-viewer "example.mpd")  

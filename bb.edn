@@ -24,6 +24,9 @@
    :task
    (do (shell "rm -rf public")
        (run 'build-static)
+       (shell "pwd")
+       (shell "ls")
+       (shell "cp resources/example.mpd public/example.mpd")
        (shell "npm install")
        (shell "npm run gh-pages"))}
 

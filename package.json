@@ -4,5 +4,7 @@
   },
   "scripts": {
     "gh-pages": "gh-pages -d public --dotfiles true"
-  }
+  },
+  "homepage": "https://danielmartincraig.github.io/technic-fan-notebook/"
+
 }
